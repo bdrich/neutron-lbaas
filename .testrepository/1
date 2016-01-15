@@ -1,0 +1,11 @@
+time: 2016-01-14 15:52:53.832283Z
+tags: worker-0
+test: setUpClass (neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic)
+time: 2016-01-14 15:52:53.832283Z
+skip: setUpClass (neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic) [ multipart
+Content-Type: text/plain;charset=utf8
+reason
+15
+Neutron not available0
+]
+tags: -worker-0

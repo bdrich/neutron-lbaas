@@ -1,0 +1,96 @@
+actionid: scenario
+msg: developpkg
+cmdargs: ['/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/tools/tox_install.sh', 'unconstrained', '-e', '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas']
+env: {'PROJECT_HOME': '/root/development', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '192.168.100.123 57910 22', 'LOGNAME': 'root', 'USER': 'root', 'PATH': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/bin:/root/.virtualenvs/lbaas-auto/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'HOME': '/root', 'PS1': '(lbaas-auto)\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ ', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'OS_TESTR_CONCURRENCY': '1', 'SHLVL': '1', 'PYTHONHASHSEED': '1423980814', 'WORKON_HOME': '/root/.virtualenvs', 'XDG_RUNTIME_DIR': '/run/user/0', 'VIRTUAL_ENV': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario', 'VIRTUALENVWRAPPER_WORKON_CD': '1', 'LC_ALL': 'en_US.UTF-8', 'XDG_SESSION_ID': '12', '_': '/root/.virtualenvs/lbaas-auto/bin/tox', 'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUALENVWRAPPER_HOOK_DIR': '/root/.virtualenvs', 'SSH_TTY': '/dev/pts/22', 'OLDPWD': '/root', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/local/bin/virtualenvwrapper.sh', 'PWD': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas', 'OS_TEST_PATH': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/neutron_lbaas/tests/tempest/v2/scenario', 'MAIL': '/var/mail/root', 'SSH_CONNECTION': '192.168.100.123 57910 192.168.100.124 22'}
+
+Neutron already installed; using existing package
+Obtaining file:///opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas
+Requirement already up-to-date: pbr>=1.6 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: eventlet>=0.17.4 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: requests!=2.9.0,>=2.8.1 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: netaddr!=0.7.16,>=0.7.12 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: SQLAlchemy<1.1.0,>=1.0.10 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: alembic>=0.8.0 in ./.tox/scenario/lib/python2.7/site-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: six>=1.9.0 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.config>=3.2.0 in ./.tox/scenario/lib/python2.7/site-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.db>=4.1.0 in ./.tox/scenario/lib/python2.7/site-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.log>=1.14.0 in ./.tox/scenario/lib/python2.7/site-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.messaging!=2.8.0,!=3.1.0,>2.6.1 in ./.tox/scenario/lib/python2.7/site-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.serialization>=1.10.0 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.service>=1.0.0 in ./.tox/scenario/lib/python2.7/site-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.utils>=3.2.0 in ./.tox/scenario/lib/python2.7/site-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Collecting python-barbicanclient>=3.3.0 (from neutron-lbaas==8.0.0.0b2.dev78)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/f0f/566bc563efd3a/python_barbicanclient-3.3.0-py2-none-any.whl (58kB)
+Requirement already up-to-date: pyasn1 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Collecting pyasn1-modules (from neutron-lbaas==8.0.0.0b2.dev78)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/5f4/9e6da36e354e7/pyasn1_modules-0.0.8-py2.py3-none-any.whl
+Requirement already up-to-date: pyOpenSSL>=0.14 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: stevedore>=1.5.0 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: keystoneauth1>=2.1.0 in /usr/local/lib/python2.7/dist-packages (from neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: greenlet>=0.3 in ./.tox/scenario/lib/python2.7/site-packages (from eventlet>=0.17.4->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: Mako in /usr/local/lib/python2.7/dist-packages (from alembic>=0.8.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: python-editor>=0.3 in ./.tox/scenario/lib/python2.7/site-packages (from alembic>=0.8.0->neutron-lbaas==8.0.0.0b2.dev78)
+Collecting argparse (from oslo.config>=3.2.0->neutron-lbaas==8.0.0.0b2.dev78)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/c37/216a954c86690/argparse-1.4.0-py2.py3-none-any.whl
+Requirement already up-to-date: oslo.i18n>=1.5.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.db>=4.1.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: sqlalchemy-migrate>=0.9.6 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.db>=4.1.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: Babel>=1.3 in /usr/local/lib/python2.7/dist-packages (from oslo.db>=4.1.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.context>=0.2.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.db>=4.1.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: debtcollector>=0.3.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.log>=1.14.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: python-dateutil>=2.4.2 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.log>=1.14.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: pyinotify>=0.9.6 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.log>=1.14.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: trollius>=1.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: PyYAML>=3.1.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: futurist>=0.1.2 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.middleware>=3.0.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: aioeventlet>=0.4 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: kombu>=3.0.7 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: amqp>=1.4.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: cachetools>=1.0.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: WebOb>=1.2.3 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: pytz>=2013.6 in /usr/local/lib/python2.7/dist-packages (from oslo.serialization>=1.10.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: msgpack-python>=0.4.0 in /usr/local/lib/python2.7/dist-packages (from oslo.serialization>=1.10.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: PasteDeploy>=1.5.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: oslo.concurrency>=2.3.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: Paste in ./.tox/scenario/lib/python2.7/site-packages (from oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: Routes!=2.0,!=2.1,>=1.12.3 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: monotonic>=0.3 in /usr/local/lib/python2.7/dist-packages (from oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: funcsigs>=0.4 in /usr/local/lib/python2.7/dist-packages (from oslo.utils>=3.2.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: iso8601>=0.1.9 in /usr/local/lib/python2.7/dist-packages (from oslo.utils>=3.2.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: netifaces>=0.10.4 in /usr/local/lib/python2.7/dist-packages (from oslo.utils>=3.2.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: python-keystoneclient>=1.6.0 in ./.tox/scenario/lib/python2.7/site-packages (from python-barbicanclient>=3.3.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: cliff>=1.14.0 in /usr/local/lib/python2.7/dist-packages (from python-barbicanclient>=3.3.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: cryptography>=0.7 in /usr/local/lib/python2.7/dist-packages (from pyOpenSSL>=0.14->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: MarkupSafe>=0.9.2 in ./.tox/scenario/lib/python2.7/site-packages (from Mako->alembic>=0.8.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: Tempita>=0.4 in ./.tox/scenario/lib/python2.7/site-packages (from sqlalchemy-migrate>=0.9.6->oslo.db>=4.1.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: sqlparse in ./.tox/scenario/lib/python2.7/site-packages (from sqlalchemy-migrate>=0.9.6->oslo.db>=4.1.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: decorator in /usr/local/lib/python2.7/dist-packages (from sqlalchemy-migrate>=0.9.6->oslo.db>=4.1.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: wrapt>=1.7.0 in /usr/local/lib/python2.7/dist-packages (from debtcollector>=0.3.0->oslo.log>=1.14.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: futures in /usr/local/lib/python2.7/dist-packages (from trollius>=1.0->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: contextlib2>=0.4.0 in ./.tox/scenario/lib/python2.7/site-packages (from futurist>=0.1.2->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: Jinja2>=2.8 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.middleware>=3.0.0->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: ordereddict in ./.tox/scenario/lib/python2.7/site-packages (from oslo.middleware>=3.0.0->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: anyjson>=0.3.3 in /usr/local/lib/python2.7/dist-packages (from kombu>=3.0.7->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: enum34 in /usr/local/lib/python2.7/dist-packages (from oslo.concurrency>=2.3.0->oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: retrying!=1.3.0,>=1.2.3 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.concurrency>=2.3.0->oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: fasteners>=0.7 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.concurrency>=2.3.0->oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: repoze.lru>=0.3 in ./.tox/scenario/lib/python2.7/site-packages (from Routes!=2.0,!=2.1,>=1.12.3->oslo.service>=1.0.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: PrettyTable<0.8,>=0.7 in /usr/lib/python2.7/dist-packages (from python-keystoneclient>=1.6.0->python-barbicanclient>=3.3.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: unicodecsv>=0.8.0 in /usr/local/lib/python2.7/dist-packages (from cliff>=1.14.0->python-barbicanclient>=3.3.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: cmd2>=0.6.7 in /usr/local/lib/python2.7/dist-packages (from cliff>=1.14.0->python-barbicanclient>=3.3.0->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: pyparsing>=2.0.1 in ./.tox/scenario/lib/python2.7/site-packages (from cliff>=1.14.0->python-barbicanclient>=3.3.0->neutron-lbaas==8.0.0.0b2.dev78)
+Collecting setuptools>=1.0 (from cryptography>=0.7->pyOpenSSL>=0.14->neutron-lbaas==8.0.0.0b2.dev78)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/7bd/ac510b6bc1675/setuptools-19.2-py2.py3-none-any.whl (463kB)
+Requirement already up-to-date: idna>=2.0 in /usr/local/lib/python2.7/dist-packages (from cryptography>=0.7->pyOpenSSL>=0.14->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: ipaddress in /usr/local/lib/python2.7/dist-packages (from cryptography>=0.7->pyOpenSSL>=0.14->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: cffi>=1.4.1 in /usr/local/lib/python2.7/dist-packages (from cryptography>=0.7->pyOpenSSL>=0.14->neutron-lbaas==8.0.0.0b2.dev78)
+Requirement already up-to-date: pycparser in /usr/local/lib/python2.7/dist-packages (from cffi>=1.4.1->cryptography>=0.7->pyOpenSSL>=0.14->neutron-lbaas==8.0.0.0b2.dev78)
+Installing collected packages: argparse, python-barbicanclient, pyasn1-modules, neutron-lbaas, setuptools
+  Found existing installation: argparse 1.2.1
+    DEPRECATION: Uninstalling a distutils installed project (argparse) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Not uninstalling argparse at /usr/lib/python2.7, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Running setup.py develop for neutron-lbaas
+  Found existing installation: setuptools 18.2
+    Uninstalling setuptools-18.2:
+      Successfully uninstalled setuptools-18.2
+Successfully installed argparse-1.2.1 neutron-lbaas pyasn1-modules-0.0.8 python-barbicanclient-3.3.0 setuptools-19.2

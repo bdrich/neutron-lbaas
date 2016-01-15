@@ -1,0 +1,6 @@
+time: 2016-01-14 19:57:24.964729Z
+tags: worker-0
+test: neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic.test_roundrobin_basic[compute,network]
+failure: neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic.test_roundrobin_basic[compute,network] [ multipart
+]
+tags: -worker-0

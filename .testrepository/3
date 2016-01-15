@@ -1,0 +1,38 @@
+time: 2016-01-14 16:07:11.342900Z
+tags: worker-0
+test: setUpClass (neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic)
+time: 2016-01-14 16:07:11.342900Z
+failure: setUpClass (neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic) [ multipart
+Content-Type: text/x-traceback;charset="utf8",language="python"
+traceback
+7F7
+Traceback (most recent call last):
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 272, in setUpClass
+    six.reraise(etype, value, trace)
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 260, in setUpClass
+    cls.setup_credentials()
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 351, in setup_credentials
+    credential_type=credentials_type)
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 490, in get_client_manager
+    creds = getattr(cred_provider, credentials_method)()
+  File "neutron_lbaas/tests/tempest/lib/common/isolated_creds.py", line 324, in get_primary_creds
+    return self.get_credentials('primary')
+  File "neutron_lbaas/tests/tempest/lib/common/isolated_creds.py", line 316, in get_credentials
+    credentials.tenant_id)
+  File "neutron_lbaas/tests/tempest/lib/common/isolated_creds.py", line 241, in _create_network_resources
+    router = self._create_router(router_name, tenant_id)
+  File "neutron_lbaas/tests/tempest/lib/common/isolated_creds.py", line 293, in _create_router
+    tenant_id=tenant_id)
+  File "neutron_lbaas/tests/tempest/lib/services/network/json/network_client.py", line 338, in create_router
+    resp, body = self.post(uri, body)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/common/rest_client.py", line 259, in post
+    return self.request('POST', url, extra_headers, headers, body)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/common/rest_client.py", line 640, in request
+    resp, resp_body)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/common/rest_client.py", line 693, in _error_checker
+    raise exceptions.NotFound(resp_body, resp=resp)
+tempest_lib.exceptions.NotFound: Object not found
+Details: {u'detail': u'', u'message': u'Network bb1cb53d-c388-4c1a-b76a-e25ae0e3dd63 could not be found', u'type': u'NetworkNotFound'}
+0
+]
+tags: -worker-0

@@ -1,0 +1,6 @@
+#!/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/bin/python
+# EASY-INSTALL-DEV-SCRIPT: 'neutron==8.0.0.0b2.dev371','neutron-rootwrap-xen-dom0'
+__requires__ = 'neutron==8.0.0.0b2.dev371'
+__import__('pkg_resources').require('neutron==8.0.0.0b2.dev371')
+__file__ = '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/src/neutron/bin/neutron-rootwrap-xen-dom0'
+exec(compile(open(__file__).read(), __file__, 'exec'))

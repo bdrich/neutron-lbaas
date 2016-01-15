@@ -1,0 +1,290 @@
+actionid: scenario
+msg: getenv
+cmdargs: ['/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/tools/tox_install.sh', 'unconstrained', '-r/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt']
+env: {'PROJECT_HOME': '/root/development', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '192.168.100.123 57910 22', 'LOGNAME': 'root', 'USER': 'root', 'PATH': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/bin:/root/.virtualenvs/lbaas-auto/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'HOME': '/root', 'PS1': '(lbaas-auto)\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ ', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'OS_TESTR_CONCURRENCY': '1', 'SHLVL': '1', 'PYTHONHASHSEED': '1423980814', 'WORKON_HOME': '/root/.virtualenvs', 'XDG_RUNTIME_DIR': '/run/user/0', 'VIRTUAL_ENV': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario', 'VIRTUALENVWRAPPER_WORKON_CD': '1', 'LC_ALL': 'en_US.UTF-8', 'XDG_SESSION_ID': '12', '_': '/root/.virtualenvs/lbaas-auto/bin/tox', 'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUALENVWRAPPER_HOOK_DIR': '/root/.virtualenvs', 'SSH_TTY': '/dev/pts/22', 'OLDPWD': '/root', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/local/bin/virtualenvwrapper.sh', 'PWD': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas', 'OS_TEST_PATH': '/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/neutron_lbaas/tests/tempest/v2/scenario', 'MAIL': '/var/mail/root', 'SSH_CONNECTION': '192.168.100.123 57910 192.168.100.124 22'}
+
+Obtaining neutron from git+https://git.openstack.org/openstack/neutron#egg=neutron
+  Cloning https://git.openstack.org/openstack/neutron to ./.tox/scenario/src/neutron
+Requirement already up-to-date: pbr>=1.6 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting Paste (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/42d/3df8ad5334576/Paste-2.0.2-py2-none-any.whl (610kB)
+Collecting PasteDeploy>=1.5.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/113/4e25af0d52190/PasteDeploy-1.5.2-py2.py3-none-any.whl
+Collecting debtcollector>=0.3.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/710/5e0bc2354f176/debtcollector-1.2.0-py2.py3-none-any.whl
+Requirement already up-to-date: eventlet>=0.17.4 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting pecan>=1.0.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/453/9a0472ea67896/pecan-1.0.3-py2-none-any.whl (146kB)
+Collecting greenlet>=0.3.2 (from neutron)
+Collecting httplib2>=0.7.5 (from neutron)
+Requirement already up-to-date: requests!=2.9.0,>=2.8.1 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting Jinja2>=2.8 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/75a/cb6f1abfc46ed/Jinja2-2.8-py2.py3-none-any.whl (263kB)
+Collecting keystonemiddleware>=4.0.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/80e/936cfe9ee7770/keystonemiddleware-4.1.0-py2.py3-none-any.whl (109kB)
+Requirement already up-to-date: netaddr!=0.7.16,>=0.7.12 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting python-neutronclient>=2.6.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/1bc/083a4e9ee94d4/python_neutronclient-4.0.0-py2.py3-none-any.whl (225kB)
+Collecting retrying!=1.3.0,>=1.2.3 (from neutron)
+Collecting ryu>=3.23.2 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/931/60c5c8484d3e5/ryu-3.29.1.tar.gz (1.3MB)
+Requirement already up-to-date: SQLAlchemy<1.1.0,>=1.0.10 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting WebOb>=1.2.3 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/2cb/4e2b5657f0200/WebOb-1.5.1-py2.py3-none-any.whl (79kB)
+Requirement already up-to-date: keystoneauth1>=2.1.0 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting alembic>=0.8.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/5f9/5d8ee62b443f9/alembic-0.8.4.tar.gz (950kB)
+Requirement already up-to-date: six>=1.9.0 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Requirement already up-to-date: stevedore>=1.5.0 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting oslo.concurrency>=2.3.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/fe7/c1274959cceac/oslo.concurrency-3.3.0-py2.py3-none-any.whl
+Collecting oslo.config>=3.2.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/bfa/e9b13ed4ae725/oslo.config-3.2.1-py2.py3-none-any.whl (78kB)
+Collecting oslo.context>=0.2.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/e4b/8556b060feaa5/oslo.context-1.0.1-py2.py3-none-any.whl
+Collecting oslo.db>=4.1.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/0a0/b36ee32f635a9/oslo.db-4.3.0-py2.py3-none-any.whl (144kB)
+Collecting oslo.i18n>=1.5.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/5fa/283caa3185e3b/oslo.i18n-3.2.0-py2.py3-none-any.whl
+Collecting oslo.log>=1.14.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/a5c/ba975786ff864/oslo.log-2.3.0-py2.py3-none-any.whl (41kB)
+Collecting oslo.messaging!=2.8.0,!=3.1.0,>2.6.1 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/871/024f648960658/oslo.messaging-4.0.0-py2-none-any.whl (249kB)
+Collecting oslo.middleware>=3.0.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/f93/f6971b940bcae/oslo.middleware-3.5.0-py2.py3-none-any.whl (43kB)
+Collecting oslo.policy>=0.5.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/3d5/853aeb022e169/oslo.policy-1.3.0-py2.py3-none-any.whl
+Collecting oslo.reports>=0.6.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/97f/79fae553fcb3c/oslo.reports-1.3.0-py2.py3-none-any.whl (48kB)
+Collecting oslo.rootwrap>=2.0.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/669/e900fcf5be08e/oslo.rootwrap-3.1.0-py2.py3-none-any.whl
+Requirement already up-to-date: oslo.serialization>=1.10.0 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting oslo.service>=1.0.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/67f/a60d48d259e06/oslo.service-1.3.0-py2.py3-none-any.whl (63kB)
+Collecting oslo.utils>=3.2.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/103/6b09502d13c0b/oslo.utils-3.4.0-py2.py3-none-any.whl (71kB)
+Collecting oslo.versionedobjects>=0.13.0 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/af6/8a4e18136800c/oslo.versionedobjects-1.3.0-py2.py3-none-any.whl (63kB)
+Requirement already up-to-date: python-novaclient!=2.33.0,>=2.29.0 in /usr/local/lib/python2.7/dist-packages (from neutron)
+Collecting Routes!=2.0,!=2.1,>=1.12.3 (from neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/2e6/d5ab8d992c0b1/Routes-2.2-py2-none-any.whl (46kB)
+Requirement already up-to-date: Babel>=1.3 in /usr/local/lib/python2.7/dist-packages (from debtcollector>=0.3.0->neutron)
+Requirement already up-to-date: funcsigs>=0.4 in /usr/local/lib/python2.7/dist-packages (from debtcollector>=0.3.0->neutron)
+Requirement already up-to-date: wrapt>=1.7.0 in /usr/local/lib/python2.7/dist-packages (from debtcollector>=0.3.0->neutron)
+Collecting singledispatch (from pecan>=1.0.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/d63/3bac187d68145/singledispatch-3.4.0.3-py2.py3-none-any.whl
+Collecting logutils>=0.3 (from pecan>=1.0.0->neutron)
+Collecting WebTest>=1.3.1 (from pecan>=1.0.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/8ed/0cb9e49888240/WebTest-2.0.20-py2-none-any.whl
+Requirement already up-to-date: Mako>=0.4.0 in /usr/local/lib/python2.7/dist-packages (from pecan>=1.0.0->neutron)
+Collecting MarkupSafe (from Jinja2>=2.8->neutron)
+Collecting pycadf!=2.0.0,>=1.1.0 (from keystonemiddleware>=4.0.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/fe5/e35906bdffb12/pycadf-2.0.1-py2-none-any.whl
+Collecting python-keystoneclient!=1.8.0,>=1.6.0 (from keystonemiddleware>=4.0.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/172/4778b4e9875aa/python_keystoneclient-2.1.1-py2.py3-none-any.whl (388kB)
+Requirement already up-to-date: os-client-config>=1.13.1 in /usr/local/lib/python2.7/dist-packages (from python-neutronclient>=2.6.0->neutron)
+Collecting argparse (from python-neutronclient>=2.6.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/c37/216a954c86690/argparse-1.4.0-py2.py3-none-any.whl
+Requirement already up-to-date: cliff>=1.15.0 in /usr/local/lib/python2.7/dist-packages (from python-neutronclient>=2.6.0->neutron)
+Requirement already up-to-date: iso8601>=0.1.9 in /usr/local/lib/python2.7/dist-packages (from python-neutronclient>=2.6.0->neutron)
+Requirement already up-to-date: simplejson>=2.2.0 in /usr/local/lib/python2.7/dist-packages (from python-neutronclient>=2.6.0->neutron)
+Requirement already up-to-date: msgpack-python>=0.3.0 in /usr/local/lib/python2.7/dist-packages (from ryu>=3.23.2->neutron)
+Collecting python-editor>=0.3 (from alembic>=0.8.0->neutron)
+Requirement already up-to-date: enum34 in /usr/local/lib/python2.7/dist-packages (from oslo.concurrency>=2.3.0->neutron)
+Collecting fasteners>=0.7 (from oslo.concurrency>=2.3.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/6ee/dfaa7513cf4bb/fasteners-0.14.1-py2.py3-none-any.whl
+Collecting sqlalchemy-migrate>=0.9.6 (from oslo.db>=4.1.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/8c9/3c2a34abb26af/sqlalchemy_migrate-0.10.0-py2-none-any.whl (108kB)
+Collecting python-dateutil>=2.4.2 (from oslo.log>=1.14.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/c81/7289a1d95a355/python_dateutil-2.4.2-py2.py3-none-any.whl (188kB)
+Collecting pyinotify>=0.9.6 (from oslo.log>=1.14.0->neutron)
+Collecting trollius>=1.0 (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+Collecting PyYAML>=3.1.0 (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+Collecting futurist>=0.1.2 (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/e9a/722995326a9e6/futurist-0.9.0-py2.py3-none-any.whl
+Collecting aioeventlet>=0.4 (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/08c/d70b05d8166c1/aioeventlet-0.4-py2-none-any.whl
+Collecting kombu>=3.0.7 (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/410/83933ee023719/kombu-3.0.33-py2.py3-none-any.whl (239kB)
+Collecting amqp>=1.4.0 (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/672/d0f24218b24b7/amqp-1.4.9-py2.py3-none-any.whl (51kB)
+Collecting cachetools>=1.0.0 (from oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/d7e/c642276029622/cachetools-1.1.5-py2.py3-none-any.whl
+Collecting ordereddict (from oslo.middleware>=3.0.0->neutron)
+Collecting psutil<2.0.0,>=1.1.1 (from oslo.reports>=0.6.0->neutron)
+Requirement already up-to-date: pytz>=2013.6 in /usr/local/lib/python2.7/dist-packages (from oslo.serialization>=1.10.0->neutron)
+Requirement already up-to-date: monotonic>=0.3 in /usr/local/lib/python2.7/dist-packages (from oslo.service>=1.0.0->neutron)
+Requirement already up-to-date: netifaces>=0.10.4 in /usr/local/lib/python2.7/dist-packages (from oslo.utils>=3.2.0->neutron)
+Requirement already up-to-date: PrettyTable<0.8,>=0.7 in /usr/lib/python2.7/dist-packages (from python-novaclient!=2.33.0,>=2.29.0->neutron)
+Collecting repoze.lru>=0.3 (from Routes!=2.0,!=2.1,>=1.12.3->neutron)
+Collecting beautifulsoup4 (from WebTest>=1.3.1->pecan>=1.0.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/219/f711e7a0b2cce/beautifulsoup4-4.4.1-py2-none-any.whl (81kB)
+Collecting waitress>=0.8.5 (from WebTest>=1.3.1->pecan>=1.0.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/7a3/88dd85a29483c/waitress-0.8.10-py2-none-any.whl (119kB)
+Requirement already up-to-date: requestsexceptions>=1.1.1 in /usr/local/lib/python2.7/dist-packages (from os-client-config>=1.13.1->python-neutronclient>=2.6.0->neutron)
+Requirement already up-to-date: appdirs>=1.3.0 in /usr/local/lib/python2.7/dist-packages (from os-client-config>=1.13.1->python-neutronclient>=2.6.0->neutron)
+Requirement already up-to-date: unicodecsv>=0.8.0 in /usr/local/lib/python2.7/dist-packages (from cliff>=1.15.0->python-neutronclient>=2.6.0->neutron)
+Requirement already up-to-date: cmd2>=0.6.7 in /usr/local/lib/python2.7/dist-packages (from cliff>=1.15.0->python-neutronclient>=2.6.0->neutron)
+Collecting pyparsing>=2.0.1 (from cliff>=1.15.0->python-neutronclient>=2.6.0->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/7c5/f691a0db36f1f/pyparsing-2.0.7-py2.py3-none-any.whl
+Collecting Tempita>=0.4 (from sqlalchemy-migrate>=0.9.6->oslo.db>=4.1.0->neutron)
+Collecting sqlparse (from sqlalchemy-migrate>=0.9.6->oslo.db>=4.1.0->neutron)
+Requirement already up-to-date: decorator in /usr/local/lib/python2.7/dist-packages (from sqlalchemy-migrate>=0.9.6->oslo.db>=4.1.0->neutron)
+Requirement already up-to-date: futures in /usr/local/lib/python2.7/dist-packages (from trollius>=1.0->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+Collecting contextlib2>=0.4.0 (from futurist>=0.1.2->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/b7f/4c5a2b900c419/contextlib2-0.5.1.tar.gz
+Requirement already up-to-date: anyjson>=0.3.3 in /usr/local/lib/python2.7/dist-packages (from kombu>=3.0.7->oslo.messaging!=2.8.0,!=3.1.0,>2.6.1->neutron)
+Building wheels for collected packages: ryu, alembic, contextlib2
+  Running setup.py bdist_wheel for ryu
+  Stored in directory: /root/.cache/pip/wheels/27/ac/ba/ca13ebe5226c585ec23a31f9b14e1831ee4bb01afe3f9256c2
+  Running setup.py bdist_wheel for alembic
+  Stored in directory: /root/.cache/pip/wheels/7c/6a/6b/628cc8f4bb022c582a4adad275a5ee014149da0ecebfac3c89
+  Running setup.py bdist_wheel for contextlib2
+  Stored in directory: /root/.cache/pip/wheels/06/ed/0a/662c6cddef60a2e6ea15396a536a9c602beb7735c195b00bec
+Successfully built ryu alembic contextlib2
+Installing collected packages: Paste, PasteDeploy, debtcollector, singledispatch, logutils, beautifulsoup4, WebOb, waitress, WebTest, pecan, greenlet, httplib2, MarkupSafe, Jinja2, argparse, oslo.config, pycadf, oslo.i18n, oslo.utils, python-keystoneclient, oslo.context, keystonemiddleware, python-neutronclient, retrying, repoze.lru, Routes, ryu, python-editor, alembic, fasteners, oslo.concurrency, Tempita, sqlparse, sqlalchemy-migrate, oslo.db, python-dateutil, pyinotify, oslo.log, trollius, PyYAML, oslo.service, contextlib2, futurist, ordereddict, oslo.middleware, aioeventlet, amqp, kombu, cachetools, oslo.messaging, oslo.policy, psutil, oslo.reports, oslo.rootwrap, oslo.versionedobjects, neutron, pyparsing
+  Found existing installation: debtcollector 1.1.0
+    Not uninstalling debtcollector at /usr/local/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: greenlet 0.4.2
+    DEPRECATION: Uninstalling a distutils installed project (greenlet) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Not uninstalling greenlet at /usr/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: httplib2 0.8
+    DEPRECATION: Uninstalling a distutils installed project (httplib2) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Not uninstalling httplib2 at /usr/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: MarkupSafe 0.18
+    Not uninstalling MarkupSafe at /usr/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: Jinja2 2.7.2
+    Not uninstalling Jinja2 at /usr/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: argparse 1.2.1
+    DEPRECATION: Uninstalling a distutils installed project (argparse) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Not uninstalling argparse at /usr/lib/python2.7, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: oslo.config 3.2.0
+    Not uninstalling oslo.config at /usr/local/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: oslo.i18n 1.5.0
+    Not uninstalling oslo.i18n at /usr/local/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: oslo.utils 3.3.0
+    Not uninstalling oslo.utils at /usr/local/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: python-keystoneclient 2.1.0
+    Not uninstalling python-keystoneclient at /usr/local/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: python-neutronclient 3.1.0
+    Not uninstalling python-neutronclient at /usr/local/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: alembic 0.7.0
+    Not uninstalling alembic at /usr/local/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: python-dateutil 1.5
+    Not uninstalling python-dateutil at /usr/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Found existing installation: PyYAML 3.10
+    DEPRECATION: Uninstalling a distutils installed project (PyYAML) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Not uninstalling PyYAML at /usr/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+  Running setup.py develop for neutron
+  Found existing installation: pyparsing 2.0.1
+    DEPRECATION: Uninstalling a distutils installed project (pyparsing) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Not uninstalling pyparsing at /usr/lib/python2.7/dist-packages, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+Successfully installed Jinja2-2.8 MarkupSafe-0.23 Paste-2.0.2 PasteDeploy-1.5.2 PyYAML-3.11 Routes-2.2 Tempita-0.5.2 WebOb-1.5.1 WebTest-2.0.20 aioeventlet-0.4 alembic-0.8.4 amqp-1.4.9 argparse-1.2.1 beautifulsoup4-4.4.1 cachetools-1.1.5 contextlib2-0.5.1 debtcollector-1.2.0 fasteners-0.14.1 futurist-0.9.0 greenlet-0.4.9 httplib2-0.9.2 keystonemiddleware-4.1.0 kombu-3.0.33 logutils-0.3.3 neutron ordereddict-1.1 oslo.concurrency-3.3.0 oslo.config-3.2.1 oslo.context-1.0.1 oslo.db-4.3.0 oslo.i18n-3.2.0 oslo.log-2.3.0 oslo.messaging-4.0.0 oslo.middleware-3.5.0 oslo.policy-1.3.0 oslo.reports-1.3.0 oslo.rootwrap-3.1.0 oslo.service-1.3.0 oslo.utils-3.4.0 oslo.versionedobjects-1.3.0 pecan-1.0.3 psutil-1.2.1 pycadf-2.0.1 pyinotify-0.9.6 pyparsing-2.0.7 python-dateutil-2.4.2 python-editor-0.5 python-keystoneclient-2.1.1 python-neutronclient-4.0.0 repoze.lru-0.6 retrying-1.3.3 ryu-3.29.1 singledispatch-3.4.0.3 sqlalchemy-migrate-0.10.0 sqlparse-0.1.18 trollius-2.0 waitress-0.8.10
+Collecting hacking<0.11,>=0.10.0 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 1))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/f24/6b6dee23a8cc8/hacking-0.10.2-py2.py3-none-any.whl
+Collecting coverage>=3.6 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 2))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/649/a25c38ed318a4/coverage-4.0.3.zip (480kB)
+Collecting fixtures>=1.3.1 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 3))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/49e/427a152eb36a3/fixtures-1.4.0-py2.py3-none-any.whl (64kB)
+Collecting mock>=1.2 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 4))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/4e5/dae615e14f9e3/mock-1.3.0-py2.py3-none-any.whl (56kB)
+Collecting python-subunit>=0.0.18 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 5))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/bb6/66fe045f8d398/python_subunit-1.2.0-py2.py3-none-any.whl (112kB)
+Collecting requests-mock>=0.7.0 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 6))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/e02/c67cc46b1e201/requests_mock-0.7.0-py2.py3-none-any.whl
+Collecting sphinx!=1.2.0,!=1.3b1,<1.3,>=1.1.2 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 7))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/7a4/924447e6675d8/Sphinx-1.2.3-py2-none-any.whl (1.9MB)
+Collecting oslosphinx!=3.4.0,>=2.5.0 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 8))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/f33/1da8114f3f75e/oslosphinx-4.2.0-py2.py3-none-any.whl
+Requirement already up-to-date: oslo.concurrency>=2.3.0 in ./.tox/scenario/lib/python2.7/site-packages (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Collecting tempest-lib>=0.13.0 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/422/7e7705b9b4507/tempest_lib-0.13.0-py2-none-any.whl (207kB)
+Collecting testrepository>=0.0.18 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 11))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/f64/8b0aceeca4fcd/testrepository-0.0.20.tar.gz (84kB)
+Collecting testtools>=1.4.0 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 12))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/199/7bb805c1d3b2c/testtools-1.8.1-py2.py3-none-any.whl (161kB)
+Collecting testscenarios>=0.4 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 13))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/37a/17934a8e3e649/testscenarios-0.5.0-py2.py3-none-any.whl
+Requirement already up-to-date: WebOb>=1.2.3 in ./.tox/scenario/lib/python2.7/site-packages (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 14))
+Requirement already up-to-date: WebTest>=2.0 in ./.tox/scenario/lib/python2.7/site-packages (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 15))
+Collecting reno>=0.1.1 (from -r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 16))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/835/707107aa58083/reno-1.3.0-py2-none-any.whl
+Collecting flake8==2.2.4 (from hacking<0.11,>=0.10.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 1))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/5f9/be8c6184beb94/flake8-2.2.4.tar.gz
+Collecting pyflakes==0.8.1 (from hacking<0.11,>=0.10.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 1))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/a98/10b19e048e77b/pyflakes-0.8.1-py2.py3-none-any.whl
+Requirement already up-to-date: pbr<2.0,>=0.11 in /usr/local/lib/python2.7/dist-packages (from hacking<0.11,>=0.10.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 1))
+Requirement already up-to-date: six>=1.7.0 in /usr/local/lib/python2.7/dist-packages (from hacking<0.11,>=0.10.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 1))
+Collecting pep8==1.5.7 (from hacking<0.11,>=0.10.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 1))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/e64/cf25ebf3ee49b/pep8-1.5.7-py2.py3-none-any.whl
+Collecting mccabe==0.2.1 (from hacking<0.11,>=0.10.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 1))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/5a3/f3fa6a4bad126/mccabe-0.2.1.tar.gz
+Requirement already up-to-date: funcsigs in /usr/local/lib/python2.7/dist-packages (from mock>=1.2->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 4))
+Collecting extras (from python-subunit>=0.0.18->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 5))
+Requirement already up-to-date: requests>=1.1 in /usr/local/lib/python2.7/dist-packages (from requests-mock>=0.7.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 6))
+Collecting docutils>=0.7 (from sphinx!=1.2.0,!=1.3b1,<1.3,>=1.1.2->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 7))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/462/2263b62c5c771/docutils-0.12.tar.gz (1.6MB)
+Requirement already up-to-date: Jinja2>=2.3 in ./.tox/scenario/lib/python2.7/site-packages (from sphinx!=1.2.0,!=1.3b1,<1.3,>=1.1.2->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 7))
+Collecting Pygments>=1.2 (from sphinx!=1.2.0,!=1.3b1,<1.3,>=1.1.2->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 7))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/98f/29db02f4b22f5/Pygments-2.0.2-py2-none-any.whl (672kB)
+Requirement already up-to-date: enum34 in /usr/local/lib/python2.7/dist-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: oslo.config>=3.2.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: oslo.i18n>=1.5.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: oslo.utils>=3.2.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: Babel>=1.3 in /usr/local/lib/python2.7/dist-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: iso8601>=0.1.9 in /usr/local/lib/python2.7/dist-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: retrying!=1.3.0,>=1.2.3 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: fasteners>=0.7 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Collecting os-testr>=0.4.1 (from tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/9da/89752091d81bc/os_testr-0.6.0-py2-none-any.whl
+Requirement already up-to-date: oslo.log>=1.12.0 in ./.tox/scenario/lib/python2.7/site-packages (from tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Collecting paramiko>=1.13.0 (from tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/06a/d3fae3fae7718/paramiko-1.16.0-py2.py3-none-any.whl (169kB)
+Requirement already up-to-date: jsonschema!=2.5.0,<3.0.0,>=2.0.0 in /usr/local/lib/python2.7/dist-packages (from tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Requirement already up-to-date: httplib2>=0.7.5 in ./.tox/scenario/lib/python2.7/site-packages (from tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Collecting python-mimeparse (from testtools>=1.4.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 12))
+Collecting unittest2>=1.0.0 (from testtools>=1.4.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 12))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/4fb/80726cfd1d888/unittest2-1.1.0-py2.py3-none-any.whl (96kB)
+Collecting traceback2 (from testtools>=1.4.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 12))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/a9b/6ac7b5ee15cc7/traceback2-1.4.0-py2.py3-none-any.whl
+Requirement already up-to-date: beautifulsoup4 in ./.tox/scenario/lib/python2.7/site-packages (from WebTest>=2.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 15))
+Requirement already up-to-date: waitress>=0.8.5 in ./.tox/scenario/lib/python2.7/site-packages (from WebTest>=2.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 15))
+Requirement already up-to-date: PyYAML>=3.1.0 in ./.tox/scenario/lib/python2.7/site-packages (from reno>=0.1.1->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 16))
+Requirement already up-to-date: MarkupSafe in ./.tox/scenario/lib/python2.7/site-packages (from Jinja2>=2.3->sphinx!=1.2.0,!=1.3b1,<1.3,>=1.1.2->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 7))
+Requirement already up-to-date: netaddr!=0.7.16,>=0.7.12 in /usr/local/lib/python2.7/dist-packages (from oslo.config>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: stevedore>=1.5.0 in /usr/local/lib/python2.7/dist-packages (from oslo.config>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Collecting argparse (from oslo.config>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/c37/216a954c86690/argparse-1.4.0-py2.py3-none-any.whl
+Requirement already up-to-date: debtcollector>=0.3.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.utils>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: pytz>=2013.6 in /usr/local/lib/python2.7/dist-packages (from oslo.utils>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: netifaces>=0.10.4 in /usr/local/lib/python2.7/dist-packages (from oslo.utils>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: monotonic>=0.3 in /usr/local/lib/python2.7/dist-packages (from oslo.utils>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: oslo.serialization>=1.10.0 in /usr/local/lib/python2.7/dist-packages (from oslo.log>=1.12.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Requirement already up-to-date: python-dateutil>=2.4.2 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.log>=1.12.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Requirement already up-to-date: pyinotify>=0.9.6 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.log>=1.12.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Requirement already up-to-date: oslo.context>=0.2.0 in ./.tox/scenario/lib/python2.7/site-packages (from oslo.log>=1.12.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Collecting ecdsa>=0.11 (from paramiko>=1.13.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/a32/5d50195d04959/ecdsa-0.13-py2.py3-none-any.whl (86kB)
+Collecting pycrypto!=2.4,>=2.1 (from paramiko>=1.13.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Requirement already up-to-date: functools32 in /usr/local/lib/python2.7/dist-packages (from jsonschema!=2.5.0,<3.0.0,>=2.0.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Collecting linecache2 (from traceback2->testtools>=1.4.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 12))
+  Downloading https://pypi-mirror.openstack.blueboxgrid.com/root/pypi/+f/f58/f9c79da0ac3fd/linecache2-1.0.0-py2.py3-none-any.whl
+Requirement already up-to-date: wrapt>=1.7.0 in /usr/local/lib/python2.7/dist-packages (from debtcollector>=0.3.0->oslo.utils>=3.2.0->oslo.concurrency>=2.3.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 9))
+Requirement already up-to-date: msgpack-python>=0.4.0 in /usr/local/lib/python2.7/dist-packages (from oslo.serialization>=1.10.0->oslo.log>=1.12.0->tempest-lib>=0.13.0->-r /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/test-requirements.txt (line 10))
+Building wheels for collected packages: coverage, testrepository, flake8, mccabe, docutils
+  Running setup.py bdist_wheel for coverage
+  Stored in directory: /root/.cache/pip/wheels/4a/2a/01/52fde4e2989d1c96d65efc9ec04a2574fc8911072ce310001f
+  Running setup.py bdist_wheel for testrepository
+  Stored in directory: /root/.cache/pip/wheels/23/1d/1f/a7ba0b5b863f48dd9229aa5fcad80918e18a884234528a730b
+  Running setup.py bdist_wheel for flake8
+  Stored in directory: /root/.cache/pip/wheels/33/69/4b/0a20153a12c5d247679491d1dfc22364833f7807b077324969
+  Running setup.py bdist_wheel for mccabe
+  Stored in directory: /root/.cache/pip/wheels/02/74/88/681aaa56e1503696737f8bf9dda27e950ed09087038729dcb3
+  Running setup.py bdist_wheel for docutils
+  Stored in directory: /root/.cache/pip/wheels/c5/77/8d/71332761d860b5aa85641539262715af288b190779263aef43
+Successfully built coverage testrepository flake8 mccabe docutils
+Installing collected packages: pyflakes, pep8, mccabe, flake8, hacking, coverage, python-mimeparse, linecache2, traceback2, argparse, unittest2, extras, testtools, fixtures, mock, python-subunit, requests-mock, docutils, Pygments, sphinx, oslosphinx, testrepository, os-testr, ecdsa, pycrypto, paramiko, tempest-lib, testscenarios, reno
+  Found existing installation: argparse 1.2.1
+    DEPRECATION: Uninstalling a distutils installed project (argparse) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Not uninstalling argparse at /usr/lib/python2.7, outside environment /opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario
+Successfully installed Pygments-2.0.2 argparse-1.2.1 coverage-4.0.3 docutils-0.12 ecdsa-0.13 extras-0.0.3 fixtures-1.4.0 flake8-2.2.4 hacking-0.10.2 linecache2-1.0.0 mccabe-0.2.1 mock-1.3.0 os-testr-0.6.0 oslosphinx-4.2.0 paramiko-1.16.0 pep8-1.5.7 pycrypto-2.6.1 pyflakes-0.8.1 python-mimeparse-0.1.4 python-subunit-1.2.0 reno-1.3.0 requests-mock-0.7.0 sphinx-1.2.3 tempest-lib-0.13.0 testrepository-0.0.20 testscenarios-0.5.0 testtools-1.8.1 traceback2-1.4.0 unittest2-1.1.0

@@ -1,0 +1,50 @@
+time: 2016-01-14 16:06:14.411134Z
+tags: worker-0
+test: setUpClass (neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic)
+time: 2016-01-14 16:06:14.411134Z
+failure: setUpClass (neutron_lbaas.tests.tempest.v2.scenario.test_roundrobin_basic.TestRoundRobinBasic) [ multipart
+Content-Type: text/x-traceback;language="python",charset="utf8"
+traceback
+C97
+Traceback (most recent call last):
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 272, in setUpClass
+    six.reraise(etype, value, trace)
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 260, in setUpClass
+    cls.setup_credentials()
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 351, in setup_credentials
+    credential_type=credentials_type)
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 474, in get_client_manager
+    cred_provider = cls._get_credentials_provider()
+  File "neutron_lbaas/tests/tempest/lib/test.py", line 452, in _get_credentials_provider
+    identity_version=identity_version)
+  File "neutron_lbaas/tests/tempest/lib/common/credentials.py", line 39, in get_isolated_credentials
+    identity_version=identity_version)
+  File "neutron_lbaas/tests/tempest/lib/common/isolated_creds.py", line 149, in __init__
+    identity_version=self.identity_version)
+  File "neutron_lbaas/tests/tempest/lib/common/cred_provider.py", line 65, in get_configured_credentials
+    identity_version=identity_version, **params)
+  File "neutron_lbaas/tests/tempest/lib/common/cred_provider.py", line 94, in get_credentials
+    **params)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/auth.py", line 511, in get_credentials
+    creds = auth_provider.fill_credentials()
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/auth.py", line 82, in fill_credentials
+    auth_data = self.get_auth()
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/auth.py", line 102, in get_auth
+    self.set_auth()
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/auth.py", line 111, in set_auth
+    self.cache = self._get_auth()
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/auth.py", line 243, in _get_auth
+    token, auth_data = auth_func(**auth_params)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/services/identity/v2/token_client.py", line 101, in get_token
+    body = self.auth(user, password, tenant)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/services/identity/v2/token_client.py", line 51, in auth
+    resp, body = self.post(self.auth_url, body=body)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/common/rest_client.py", line 259, in post
+    return self.request('POST', url, extra_headers, headers, body)
+  File "/opt/bbc/openstack-11.0-master/neutron/src/neutron-lbaas/.tox/scenario/local/lib/python2.7/site-packages/tempest_lib/services/identity/v2/token_client.py", line 92, in request
+    raise exceptions.Unauthorized(resp_body['error']['message'])
+tempest_lib.exceptions.Unauthorized: Unauthorized
+Details: Invalid user / password (Disable debug mode to suppress these details.)
+0
+]
+tags: -worker-0
